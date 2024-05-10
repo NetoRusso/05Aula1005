@@ -222,7 +222,7 @@ span:hover {
   font-family: var(--font-texto);
   color: var(--cor-secundaria);
   font-weight: 600;
-  font-size: clamp(0.75rem, 0.4615rem + 1.2821vw, 2rem);
+  font-size: 16px;
   margin: 10px;
   text-align: left;
 }
@@ -249,7 +249,7 @@ span:hover {
 .feitosCardBox p {
   font-family: var(--font-texto);
   font-weight: 600;
-  font-size: clamp(0.75rem, 0.4615rem + 1.2821vw, 2rem);
+  font-size: 16px;
   margin: 10px;
   text-align: left;
 }

@@ -1,0 +1,398 @@
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap");
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  font-size: 10px;
+  --cor-primaria: black;
+  --cor-secundaria: #defff2;
+  --cor-terciaria: #0ff4c6;
+  --cor-hover: #d68fd6;
+  --cor-background: #000009;
+
+  --font-titulo: "Krona One", sans-serif;
+  --font-texto: 'Montserrat', sans-serif;
+}
+
+html{
+    min-height: 100vh;
+    height: 100%;
+}
+
+body {
+  height: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+  background-color: var(--cor-background);
+  color: var(--cor-secundaria);
+}
+
+span {
+  color: var(--cor-terciaria);
+}
+
+span:hover {
+  color: var(--cor-hover);
+}
+
+/* Cabeca */
+
+.cabeca {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.cabecaMenu {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-items: baseline;
+  width: 100%;
+}
+
+.cabecaMenu ul {
+  list-style-type: none;
+  width: 100%;
+  display: flex;
+  padding: 20px 5vw;
+  gap: 2vw;
+  position: fixed;
+  z-index: 2;
+  background-color: rgba(255, 255, 255, 0.10);
+}
+
+.cabecaMenu a {
+  text-decoration: none;
+  color: var(--cor-terciaria);
+  font-size: clamp(1rem, 0.7692rem + 1.0256vw, 2rem);
+  font-family: var(--font-texto);
+  font-weight: 600;
+  padding: 3px;
+}
+
+.cabecaMenu a:hover {
+  color: var(--cor-hover);
+  scale: 1.2;
+}
+
+.cabecaTitulo {
+  font-size: clamp(1.5rem, 1.3269rem + 0.7692vw, 2.25rem);
+}
+
+.cabecaTextos {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+  margin: 100px 0;
+}
+
+.apresentacaoCabecaTexto {
+  font-size: clamp(1rem, 0.7692rem + 1.0256vw, 2rem);
+  font-family: var(--font-texto);
+  text-justify: inter-cluster;
+}
+
+/* Sobre Mim */
+
+.sobreMim {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  align-content: center;
+  align-items: center;
+  padding: 100px 0 50px 0;
+}
+
+.sobreMimAjustes {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.sobreMimTitulo {
+
+  font-family: var(--font-titulo);
+  font-weight: 400;
+  font-size: clamp(1rem, 0.7692rem + 1.0256vw, 2rem);
+  margin: 20px;
+  justify-content: right;
+  text-align: right;
+
+}
+
+.sobreMimTituloDestaque {
+  color:var(--cor-terciaria);
+}
+
+.sobreMimTituloDestaque:hover {
+  color:var(--cor-hover);
+}
+
+
+.sobreMimContainer {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 10%;
+}
+
+.sobreMimFoto {
+  flex: 50%;
+  width: 40%;
+  height: auto;
+}
+
+.sobreMimTextos {
+  flex: 50%;
+  width: 40%;
+  height: auto;
+}
+
+.sobreMimTexto {
+  font-family: var(--font-texto);
+  font-weight: 400;
+  font-size: clamp(0.75rem, 0.4615rem + 1.2821vw, 2rem);
+  margin: 10px;
+  text-align: right;
+}
+
+.reforco {
+  color: var(--cor-terciaria);
+}
+
+.reforco:hover {
+  color: var(--cor-hover);
+}
+
+
+/* feitos */
+
+.feitos {
+  height: auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.feitosTitulo {
+  font-family: var(--font-titulo);
+  font-weight: 400;
+  font-size: clamp(1rem, 0.7692rem + 1.0256vw, 2rem);
+  margin: 20px;
+  justify-content: right;
+  text-align: right;
+}
+
+.feitosSubtitulo {
+  display: flex;
+
+}
+
+.feitosCards {
+  margin-top: 50px;
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  gap: 2vw;
+}
+
+.feitosCard {
+  width: 300px;
+  text-decoration: none;
+  font-family: var(--font-texto);
+  color: var(--cor-secundaria);
+  font-weight: 600;
+  font-size: clamp(0.75rem, 0.4615rem + 1.2821vw, 2rem);
+  margin: 10px;
+  text-align: left;
+}
+
+.feitosCardBox {
+  width: 300px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.feitosCardBox:hover {
+  scale: 0.9;
+  cursor: pointer;
+}
+
+.feitosCardBox img {
+  width: 140px;
+  height: auto;
+}
+
+.feitosCardBox p {
+  font-family: var(--font-texto);
+  font-weight: 600;
+  font-size: clamp(0.75rem, 0.4615rem + 1.2821vw, 2rem);
+  margin: 10px;
+  text-align: left;
+}
+
+
+/* contatos */
+
+.contatos {
+  width: 100%;
+  min-height: 75vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contatosLinks {
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.ContatosLinksSubtitulo {
+  font-family: var(--font-titulo);
+  font-weight: 400;
+  font-size: 1.8rem;
+}
+
+.ContatosLinksSubtitulo {
+  color:var(--cor-terciaria);
+}
+
+.ContatosLinksSubtitulo:hover {
+  color: var(--cor-hover);
+}
+
+
+.contatosLinksLink {
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  border: 2px solid var(--cor-terciaria);
+  width: 180px;
+  padding: 9px 0;
+  text-align: center;
+  border-radius: 8px;
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: var(--cor-terciaria);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+.contatosLinksLink:hover {
+  background-color: var(--cor-background);
+  scale: 1.2;
+  border: 2px dotted var(--cor-hover);
+  color: var(--cor-hover);
+}
+
+.contatosLinksLink:nth-last-child(1){
+ margin-bottom: 50px;
+}
+
+.contatosTexto {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-top: 6px;
+}
+
+.icon {
+  height: auto;
+  width: auto;
+}
+
+
+/* rodapé */
+
+.rodape {
+  bottom: 0;
+  height: 15px;
+  width: 100%;
+  color: var(--cor-background);
+  background-color:var(--cor-terciaria);
+  text-align: center;
+  font-family: var(--font-texto);
+  font-size: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
+  font-weight: 700;
+  padding-bottom: 0px ;
+}
+
+.rodapeLink {
+  text-decoration: none;
+  color: var(--cor-background);
+  background-color:var(--cor-terciaria);
+  text-align: center;
+  font-family: var(--font-texto);
+  font-size: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
+  font-weight: 700;
+}
+
+
+
+/* Responsividade */
+
+
+@media (max-width: 890px) {
+  
+  :root{
+    font-size: 8px;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center ;
+  }
+  
+  .sobreMimContainer{
+    flex-direction: column;
+  }
+  .sobreMimFoto{
+    width: 80%;
+  }
+
+  .sobreMimTextos{
+    width: 80%;
+    height: auto;
+  }
+
+  .feitos {
+    padding-top: 75px;
+  }
+
+  .feitosSubtitulo {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  
+  
+}
